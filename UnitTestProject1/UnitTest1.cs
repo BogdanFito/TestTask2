@@ -42,7 +42,7 @@ namespace UnitTestProject1
             Open_Site();
             Choose_Department();
             Choose_Language();
-            int expected_result = 4;
+            int expected_result = 5;
             int result = driver.FindElements(By.XPath("//a[text()='Подробнее']")).Count;
             Assert.AreEqual(expected_result, result);
         }
